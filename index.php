@@ -10,7 +10,7 @@ $channel_token = '5gh0H3Lf0INkP5CzofOA333l0xLdAapG9dTE5lt9VFqyCjBB/NGK2kxdwIMOVu
 $channel_secret = '4320bea28ab21d44dcc3c164f9e464a8';
 
 // Get message from Line API
-$content = file_get_contents('php://input');
+$content = json_encode($_REQUEST);
 
 /* Debug data */
 $file = fopen("logs.txt", "w");
